@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Full-stack hotel booking and management application using Spring Boot and MySQL.">
+
+    <title>Hotel Booking System | Devishri Motekar</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .detail-hero {
+            padding: 75px 0 60px;
+            background: radial-gradient(ellipse at 80% 20%, rgba(88,196,232,.14), transparent 40%), var(--bg);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .detail-hero h1 {
+            font: 700 clamp(32px,5vw,48px)/1.15 "Space Grotesk",sans-serif;
+            max-width: 850px;
+            letter-spacing: -1.5px;
+        }
+
+        .detail-hero p {
+            color: var(--muted);
+            max-width: 760px;
+        }
+
+        .detail-layout {
+            display: grid;
+            grid-template-columns: minmax(0,1fr) 280px;
+            gap: 25px;
+            align-items: start;
+        }
+
+        .detail-main {
+            display: grid;
+            gap: 18px;
+        }
+
+        .detail-card,
+        .detail-aside {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 26px;
+        }
+
+        .detail-card h2 {
+            font: 700 20px "Space Grotesk",sans-serif;
+            margin: 0 0 15px;
+        }
+
+        .detail-card p,
+        .detail-card li {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .detail-card ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .detail-card li {
+            margin: 8px 0;
+        }
+
+        .detail-aside {
+            position: sticky;
+            top: 100px;
+        }
+
+        .detail-aside h3 {
+            font: 700 17px "Space Grotesk",sans-serif;
+            margin: 0 0 14px;
+        }
+
+        .detail-aside p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .detail-aside .tags {
+            margin-bottom: 20px;
+        }
+
+        .detail-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .workflow {
+            display: grid;
+            gap: 10px;
+            counter-reset: step;
+        }
+
+        .workflow div {
+            padding: 12px 15px;
+            border-radius: 9px;
+            background: var(--surface-2);
+            font-size: 13px;
+            color: var(--text);
+        }
+
+        .workflow div:before {
+            counter-increment: step;
+            content: counter(step) ". ";
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        @media(max-width:800px) {
+            .detail-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .detail-aside {
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <nav class="nav container">
+
+            <a class="brand" href="index.html">
+                Devishri<span>.</span>
+            </a>
+
+            <a class="btn btn-secondary" href="index.html#projects">
+                <i class="bi bi-arrow-left"></i>
+                Back to Portfolio
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="detail-hero">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                FULL STACK DEVELOPMENT PROJECT
+            </p>
+
+            <h1>Hotel Booking System</h1>
+
+            <p>
+                A role-based hotel booking and management application
+                designed for customers, hotel managers, and administrators.
+            </p>
+
+            <div class="detail-actions">
+
+                <a class="btn btn-primary" href="index.html#projects">
+                    Explore Other Projects
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Main Content -->
+    <main class="section">
+
+        <div class="container detail-layout">
+
+            <div class="detail-main">
+
+                <!-- About Project -->
+                <section class="detail-card">
+
+                    <h2>About the Project</h2>
+
+                    <p>
+                        Developing a full-stack Hotel Booking System
+                        that allows customers to browse and book hotels,
+                        while administrators and hotel managers manage
+                        hotel information, facilities, and bookings.
+                    </p>
+
+                </section>
+
+                <!-- Key Features -->
+                <section class="detail-card">
+
+                    <h2>Key Features</h2>
+
+                    <ul>
+                        <li>User registration and login with JWT authentication.</li>
+                        <li>Role-based access for Admin, Hotel Manager, and Customer.</li>
+                        <li>Hotel management operations: add, update, delete, and view.</li>
+                        <li>Location and facility management.</li>
+                        <li>Hotel reviews.</li>
+                        <li>Booking and booking-status management.</li>
+                        <li>MySQL database integration and REST APIs.</li>
+                        <li>BCrypt password hashing.</li>
+                    </ul>
+
+                </section>
+
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="detail-aside">
+
+                <h3>Project Snapshot</h3>
+
+                <p>
+                    <strong>Type:</strong> Full Stack Application
+                </p>
+
+                <p>
+                    <strong>Status:</strong> In Progress
+                </p>
+
+                <p>
+                    <strong>Focus:</strong> REST APIs, role-based access,
+                    hotel and booking management
+                </p>
+
+                <h3 style="margin-top:25px">
+                    Technologies
+                </h3>
+
+                <div class="tags">
+
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Spring MVC</span>
+                    <span>Hibernate</span>
+                    <span>MySQL</span>
+                    <span>React.js</span>
+                    <span>REST API</span>
+                    <span>JWT</span>
+                    <span>BCrypt</span>
+
+                </div>
+
+                <a class="text-link" href="index.html#contact">
+                    Contact me
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <a class="brand" href="index.html">
+                Devishri<span>.</span>
+            </a>
+
+            <small>
+                © <span id="year"></span> 
+                All Rights Reserved.
+            </small>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
