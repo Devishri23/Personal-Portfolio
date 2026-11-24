@@ -32,5 +32,4 @@ I am an MCA student interested in Java Development, Software Development, and We
 - **GitHub:** https://github.com/Devishri23
 - **LinkedIn:** https://www.linkedin.com/in/devishri-motekar-33b5ba380/
 
-## License
 This project is created for personal portfolio and learning purposes.
